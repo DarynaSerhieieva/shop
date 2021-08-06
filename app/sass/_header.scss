@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+    &__elements {
+        display:flex;
+	    align-items: center;
+    }
+    &__logo {
+        margin-right: 90px;
+        display: flex;
+        align-items: center;
+    }
+    &__menu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        & li {
+            list-style: none;
+	        padding-right: 36px;
+        }
+        & a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $grey-1;
+            &:hover {
+                color: $primary-purple;
+                transition-duration: 0.4s;
+                transition-property: color;
+            }
+            &:active {
+                color: $primary-purple-transparency-1;
+                transition-duration: 0.4s;
+                transition-property: color;
+            }
+        }
+    }
+    &__phone {
+        display: flex;
+	    align-items: center;
+        & a {
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey-1;
+            margin-left: 32px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                color: $primary-purple;
+                transition-duration: 0.4s;
+                transition-property: color;
+            }
+            &:active {
+                color: $primary-purple-transparency-1;
+                transition-duration: 0.4s;
+                transition-property: color;
+            }
+        }
+    }
+    &__cart{
+        display: flex;
+	    align-items: center;
+        &:hover path {
+            fill: $primary-purple;
+            transition-duration: 0.4s;
+            transition-property: fill;
+        }
+        &:active path {
+            fill: $primary-purple-transparency-1;
+            transition-duration: 0.4s;
+            transition-property: fill;
+        }
+        & p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        & svg {
+            margin: 0 4px 0 10px;
+        }
+    }
+    &__counter {
+        padding: 2px 4px;
+        background: $primary-red;
+        border-radius: 64px;
+        color: $white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
