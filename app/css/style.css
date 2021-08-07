@@ -245,7 +245,7 @@ a {
   vertical-align: middle;
 }
 
-.main-menu__list:hover > a::after {
+.main-menu__list:hover a::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition-duration: 0.4s;
@@ -306,6 +306,104 @@ a {
   transition-property: color, -webkit-text-decoration;
   transition-property: color, text-decoration;
   transition-property: color, text-decoration, -webkit-text-decoration;
+}
+
+.slider {
+  margin-bottom: 54px;
+  position: relative;
+}
+
+.slider__slide {
+  background: #FFCD4E;
+  border-radius: 16px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px 22px 38px;
+}
+
+.slider__text {
+  width: 39%;
+  padding-top: 31px;
+  padding-left: 22px;
+}
+
+.slider__text h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  margin: 0;
+  padding-bottom: 11px;
+}
+
+.slider__text p {
+  font-size: 18px;
+  line-height: 140%;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.slider__img {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 27px;
+}
+
+.button {
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #FF3A3A;
+  display: inline-block;
+  padding: 16px 30px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 8px 26px rgba(255, 58, 58, 0.44);
+          box-shadow: 0px 8px 26px rgba(255, 58, 58, 0.44);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgba(255, 58, 58, 0.7);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+
+.button:active {
+  background: rgba(255, 58, 58, 0.3);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+
+.arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url("../img/arrow_left.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
