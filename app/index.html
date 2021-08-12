@@ -8,7 +8,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <!-- <h1 class="visually-hidden">Интернет магазин</h1>
+        <h1 class="visually-hidden">Интернет магазин</h1>
         <header class="wrapper header">
             <div class="header__elements">
                 <a class="header__logo" href="index.html"><img src="img/logo.svg" width="87" height="40" alt="логотип магазина"></a>
@@ -17,9 +17,9 @@
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Акции</a></li>
                 </ul>
-            </div> -->
+            </div>
             <!--phone and cart-->
-            <!-- <div class="header__phone">
+            <div class="header__phone">
                 <a href="tel:+380681383442">+38 068 138 34 42</a>
                 <a class="header__cart" href="pay.html"> 
                     <p>Корзина</p>
@@ -28,8 +28,9 @@
                     </svg>
                     <span class="header__counter">3</span>
                 </a>
+                <button type="button" class="burger-menu"></button>
             </div>
-        </header> -->
+        </header>
         <!--main menu-->
         <nav class="wrapper">
             <ul class="main-menu">
@@ -49,7 +50,7 @@
             </ul>
         </nav>
         <div class="mob-menu">
-            <p>Выбери категорию</p>
+            <button type="button">Выбери категорию</button>
             <ul class="mob-menu__list">
                 <li class="mob-menu__item"><a href="catalog.html">Куртки</a></li>
                 <li class="mob-menu__item"><a href="catalog.html">Шапки</a></li>
@@ -59,7 +60,7 @@
         </div>
         <main>
             <!--slider-->
-            <div class="wrapper slider-nowrapper">
+            <div class="wrapper wrapper-no">
                 <section class="slider">
                     <h2 class="visually-hidden">Cлайд</h2>
                     <article class="slider__slide">
@@ -173,7 +174,7 @@
                     </ul>
                 </div>
                 <div class="product">
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -186,7 +187,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__new">Новинка</p>
@@ -199,7 +200,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <a class="product__item-img" href="#"><img class="photo" src="img/jacket_moss.jpg" srcset="img/jacket_moss@2x.jpg 2x" alt="куртка  серо-зеленая"></a>
@@ -211,7 +212,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <a class="product__item-img" href="#"><img class="photo" src="img/jacket_khaki.jpg" srcset="img/jacket_khaki@2x.jpg 2x" alt="куртка  хакки"></a>
@@ -225,7 +226,7 @@
                     </article>
                 </div>
                 <div class="product" style="display: none;">
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -238,7 +239,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -251,7 +252,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -264,61 +265,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
-                        <h2 class="visually-hidden">товар</h2>
-                        <div class="product__item">
-                            <p class="icon__sale">Скидка <b>40%</b></p>
-                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
-                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
-                            <div class="product__price">
-                                <p class="product__price-old">2950  грн.</p>
-                                <p class="product__price-new">1 590 грн.</p>
-                            </div>
-                            <a class="add-to-cart" href="#">добавить в корзину</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="product" style="display: none;">
-                    <article class="product__list product__list-w25">
-                        <h2 class="visually-hidden">товар</h2>
-                        <div class="product__item">
-                            <p class="icon__sale">Скидка <b>40%</b></p>
-                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
-                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
-                            <div class="product__price">
-                                <p class="product__price-old">2950  грн.</p>
-                                <p class="product__price-new">1 590 грн.</p>
-                            </div>
-                            <a class="add-to-cart" href="#">добавить в корзину</a>
-                        </div>
-                    </article>
-                    <article class="product__list product__list-w25">
-                        <h2 class="visually-hidden">товар</h2>
-                        <div class="product__item">
-                            <p class="icon__sale">Скидка <b>40%</b></p>
-                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
-                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
-                            <div class="product__price">
-                                <p class="product__price-old">2950  грн.</p>
-                                <p class="product__price-new">1 590 грн.</p>
-                            </div>
-                            <a class="add-to-cart" href="#">добавить в корзину</a>
-                        </div>
-                    </article>
-                    <article class="product__list product__list-w25">
-                        <h2 class="visually-hidden">товар</h2>
-                        <div class="product__item">
-                            <p class="icon__sale">Скидка <b>40%</b></p>
-                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
-                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
-                            <div class="product__price">
-                                <p class="product__price-old">2950  грн.</p>
-                                <p class="product__price-new">1 590 грн.</p>
-                            </div>
-                            <a class="add-to-cart" href="#">добавить в корзину</a>
-                        </div>
-                    </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -333,7 +280,7 @@
                     </article>
                 </div>
                 <div class="product" style="display: none;">
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -346,7 +293,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -359,7 +306,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -372,7 +319,61 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
+                        <h2 class="visually-hidden">товар</h2>
+                        <div class="product__item">
+                            <p class="icon__sale">Скидка <b>40%</b></p>
+                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
+                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
+                            <div class="product__price">
+                                <p class="product__price-old">2950  грн.</p>
+                                <p class="product__price-new">1 590 грн.</p>
+                            </div>
+                            <a class="add-to-cart" href="#">добавить в корзину</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="product" style="display: none;">
+                    <article class="product__list product__list-w25 product__list-new">
+                        <h2 class="visually-hidden">товар</h2>
+                        <div class="product__item">
+                            <p class="icon__sale">Скидка <b>40%</b></p>
+                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
+                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
+                            <div class="product__price">
+                                <p class="product__price-old">2950  грн.</p>
+                                <p class="product__price-new">1 590 грн.</p>
+                            </div>
+                            <a class="add-to-cart" href="#">добавить в корзину</a>
+                        </div>
+                    </article>
+                    <article class="product__list product__list-w25 product__list-new">
+                        <h2 class="visually-hidden">товар</h2>
+                        <div class="product__item">
+                            <p class="icon__sale">Скидка <b>40%</b></p>
+                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
+                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
+                            <div class="product__price">
+                                <p class="product__price-old">2950  грн.</p>
+                                <p class="product__price-new">1 590 грн.</p>
+                            </div>
+                            <a class="add-to-cart" href="#">добавить в корзину</a>
+                        </div>
+                    </article>
+                    <article class="product__list product__list-w25 product__list-new">
+                        <h2 class="visually-hidden">товар</h2>
+                        <div class="product__item">
+                            <p class="icon__sale">Скидка <b>40%</b></p>
+                            <a class="product__item-img" href="#"><img class="photo" src="img/jacket_red.jpg" srcset="img//jacket_red@2x.jpg 2x" alt="куртка красная"></a>
+                            <a class="product__item-name" href="#">Куртка BluKids Red Mood 4 ever</a>
+                            <div class="product__price">
+                                <p class="product__price-old">2950  грн.</p>
+                                <p class="product__price-new">1 590 грн.</p>
+                            </div>
+                            <a class="add-to-cart" href="#">добавить в корзину</a>
+                        </div>
+                    </article>
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -387,7 +388,7 @@
                     </article>
                 </div>
                 <div class="product " style="display: none;">
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -400,7 +401,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -413,7 +414,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -426,7 +427,7 @@
                             <a class="add-to-cart" href="#">добавить в корзину</a>
                         </div>
                     </article>
-                    <article class="product__list product__list-w25">
+                    <article class="product__list product__list-w25 product__list-new">
                         <h2 class="visually-hidden">товар</h2>
                         <div class="product__item">
                             <p class="icon__sale">Скидка <b>40%</b></p>
@@ -442,7 +443,7 @@
                 </div>
             </section>
         <!--reviews-->
-            <!-- <section class="wrapper">
+            <section class="wrapper wrapper-no reviews-top">
                 <h2 class="heading">Отзывы</h2>
                 <div class="reviews">
                     <article class="reviews__list">
@@ -452,7 +453,7 @@
                             <p class="reviews__text">Отличное качество. Очень удобно сделаны карманы, телефон удобно доставать. При ношении вызывает у меня только радость. В ней очень тепло. Минусов нету. Рекомендую.</p>
                         </div>
                     </article>
-                    <article class="reviews__list">
+                    <article class="reviews__list reviews__list-none">
                         <h2 class="visually-hidden">Отзыв</h2>
                         <div class="reviews__personal">
                             <img class="reviews__photo" src="img/reviews2.jpg" srcset="img/reviews2@2x.jpg 2x" alt="фото женщины">
@@ -464,10 +465,10 @@
                 </div>
             </section>
             <section class="map">
+                <h2 class="visually-hidden">карта</h2>
                 <div >
                     <iframe  class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26161.08210169127!2d30.70101872875728!3d46.43195131017954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6337522de4913%3A0x908a819813d3d94a!2z0JvRjtGB0YLQtNC-0YDRhNGB0LrQsNGPINC00L7RgC4sIDkwLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1627577739421!5m2!1sru!2sua" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <h2 class="visually-hidden">карта</h2>
                 <div class="wrapper">
                     <div class="map__list">
                         <p class="map__address">Адрес:</p>
@@ -511,6 +512,6 @@
                 </div>
             </div>
             <p class="footer__copyright">© Интернет-магазин «Logo™»2001–2021  ТМ используется на основании лицензии правообладателя</p>
-        </footer> -->
+        </footer>
     </body>
 </html>
