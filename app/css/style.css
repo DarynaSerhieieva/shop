@@ -636,9 +636,6 @@ a {
   width: 76.75%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 19px;
 }
 
@@ -653,7 +650,7 @@ a {
   padding-left: 30px;
 }
 
-.product__list-w33:nth-child(n+6) {
+.product__list-w33:nth-child(n+7) {
   display: none;
 }
 
@@ -775,6 +772,11 @@ a {
   .product__list-w25 {
     width: 50%;
   }
+  .product__list-w33 {
+    padding: 0 15px 16px 15px;
+    width: 50%;
+    max-width: 480px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -795,10 +797,16 @@ a {
     padding: 0 15px 12px 15px;
   }
   .product__list-w33 {
-    padding: 0 15px 16px 15px;
+    padding: 0 25px 17px 21px;
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
+  }
+  .product__list-w33:nth-child(n+7) {
+    display: block;
+  }
+  .product__list-w33:nth-child(n+9) {
+    display: none;
   }
 }
 
@@ -1560,6 +1568,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
   padding: 26.5px 0 97px 29px;
 }
 
@@ -1599,6 +1611,12 @@ a {
           transition-duration: 0.4s;
   -webkit-transition-property: color, border;
   transition-property: color, border;
+}
+
+@media (max-width: 767px) {
+  .paginator {
+    padding: 26.5px 0 50px 0;
+  }
 }
 
 .back {
@@ -1725,6 +1743,30 @@ a {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-left: 15px;
+}
+
+@media (max-width: 991px) {
+  .form__page {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form__radio {
+    padding: 0;
+    width: 100%;
+  }
+  .form__input {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    padding-bottom: 94px;
+  }
+  .form__page {
+    padding-top: 36.5px;
+  }
 }
 
 .radio legend {
@@ -1877,6 +1919,16 @@ a {
   -moz-appearance: textfield;
 }
 
+@media (max-width: 767px) {
+  .input {
+    padding-top: 46px;
+  }
+  .input__data {
+    padding: 0 15px 14px 15px;
+    width: 100%;
+  }
+}
+
 .send {
   width: 92%;
   display: -webkit-box;
@@ -1891,6 +1943,19 @@ a {
 .send-button {
   padding: 16px 37.5px;
   border: none;
+}
+
+@media (max-width: 767px) {
+  .send {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 28px 0 0 0;
+  }
+  .send-button {
+    width: 100%;
+  }
 }
 
 .mob-menu {
