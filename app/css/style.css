@@ -1525,7 +1525,7 @@ a {
   cursor: not-allowed;
 }
 
-.checkbox__category:focus + .checkbox__text::before {
+.checkbox__category:focus-visible + .checkbox__text::before {
   outline: 2px solid #000000;
 }
 
@@ -1831,7 +1831,7 @@ a {
   cursor: not-allowed;
 }
 
-.radio__default:focus + .radio__text::before {
+.radio__default:focus-visible + .radio__text::before {
   outline: 2px solid #000000;
 }
 
